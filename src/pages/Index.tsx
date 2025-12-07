@@ -11,6 +11,8 @@ import { usePortfolioData } from "@/hooks/usePortfolioData";
 
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import vaptIcon from "@/assets/vapt-icon.png";
+import TypingAnimation from "@/components/TypingAnimation";
+import profilePhoto from "@/assets/Sibin.png";
 import webPentestIcon from "@/assets/web-pentest-icon.png";
 import networkPentestIcon from "@/assets/network-pentest-icon.png";
 import apiPentestIcon from "@/assets/api-pentest-icon.png";
@@ -91,15 +93,16 @@ const Index = () => {
         <div className="container mx-auto text-center max-w-4xl relative">
           <div className="relative inline-block mb-6">
             <div className="w-48 h-48 rounded-full border-4 border-primary mx-auto bg-gradient-to-br from-card to-secondary flex items-center justify-center animate-glow">
-              <Shield className="w-20 h-20 text-primary" />
+              <img src={profilePhoto} alt="Sibin C" className="w-full h-full object-cover" />
             </div>
           </div>
           
           <h1 className="text-5xl md:text-6xl font-bold mb-4 animate-fade-in-up glow-text">
             <span className="text-primary">Sibin C</span>
           </h1>
-          <p className="text-2xl text-primary mb-8 animate-fade-in-up" style={{ animationDelay: "0.2s" }}>Penetration Tester</p>
-          
+          <p className="text-2xl text-primary mb-8 animate-fade-in-up h-8" style={{ animationDelay: "0.2s" }}>
+            <TypingAnimation words={["Penetration Tester", "Bug Bounty Hunter"]} />
+          </p>
           <div className="flex justify-center gap-6">
             <a href="#" className="text-muted-foreground hover:text-primary transition-colors"><Github className="w-6 h-6" /></a>
             <a href="#" className="text-muted-foreground hover:text-primary transition-colors"><Linkedin className="w-6 h-6" /></a>
