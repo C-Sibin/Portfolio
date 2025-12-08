@@ -8,7 +8,7 @@ import { ContactForm } from "@/components/ContactForm";
 import { ThemeSwitcher } from "@/components/ThemeSwitcher";
 import { BlogCard } from "@/components/BlogCard";
 import { usePortfolioData } from "@/hooks/usePortfolioData";
-
+import GlitchText from "@/components/GlitchText";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import vaptIcon from "@/assets/vapt-icon.png";
 import TypingAnimation from "@/components/TypingAnimation";
@@ -98,7 +98,7 @@ const Index = () => {
           </div>
           
           <h1 className="text-5xl md:text-6xl font-bold mb-4 animate-fade-in-up glow-text">
-            <span className="text-primary">Sibin C</span>
+            <GlitchText text="Sibin C" className="text-primary" />
           </h1>
           <p className="text-2xl text-primary mb-8 animate-fade-in-up h-8" style={{ animationDelay: "0.2s" }}>
             <TypingAnimation words={["Penetration Tester", "Bug Bounty Hunter"]} />
