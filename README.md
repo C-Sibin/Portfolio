@@ -1,10 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-# Welcome to your Lovable project
-=======
 Hey Everyone,
->>>>>>> e675f08dc9b3be1b709f5f2efabb3311cfd02cfb
-
 This is my protfolio which showcase a proffessional summary 
   +> About me
   => Platform Ranking
